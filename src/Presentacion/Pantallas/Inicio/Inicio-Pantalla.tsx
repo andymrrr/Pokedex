@@ -34,7 +34,9 @@ export const InicioPantalla = ({navigation}: Propiedad) => {
     staleTime: 1000 * 60 * 60,
   });
 
- 
+  if (!data) {
+    return(<CargandoPantalllaCompleta/>)
+  }
   return (
     <View style={TemaGlobal.marginGlobal}>
       <PokeBolaFondo estilo={Estilo.PosicionImagen} />

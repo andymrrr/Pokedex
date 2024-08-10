@@ -18,7 +18,7 @@ export const TarjetaPokemon = ({pokemon}: Propiedad) => {
         onPress={() => navegacion.navigate("PokemonPantalla", {idPokemon: pokemon.id})}
     >
       <Card
-        style={[Estilo.pokebolaContenedor, {backgroundColor: pokemon.color}]}>
+        style={[Estilo.tarjetaContenedor, {backgroundColor: pokemon.color}]}>
         <Text style={Estilo.nombre} variant="bodyLarge">
           {pokemon.nombre}
           {`\n#${pokemon.id}`}
